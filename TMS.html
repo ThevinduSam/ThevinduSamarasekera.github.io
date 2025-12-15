@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thevindu Dilmith Samarasekera - Portfolio</title>
+    <link rel="stylesheet" href="Profile_picture.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    
+    <style>
+        /* Custom animations if needed */
+        @keyframes pulse {
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-xl font-bold bg-gradient-to-r from-blue-500 to-green-400 bg-clip-text text-transparent">
+                    TDS
+                </div>
+                
+                <div class="hidden md:flex space-x-1">
+                    <a href="#home" class="px-3 py-2 rounded-lg text-sm transition-colors hover:bg-gray-800">Home</a>
+                    <a href="#about" class="px-3 py-2 rounded-lg text-sm transition-colors hover:bg-gray-800">About</a>
+                    <a href="#research" class="px-3 py-2 rounded-lg text-sm transition-colors hover:bg-gray-800">Research</a>
+                    <a href="#publications" class="px-3 py-2 rounded-lg text-sm transition-colors hover:bg-gray-800">Publications</a>
+                    <a href="#projects" class="px-3 py-2 rounded-lg text-sm transition-colors hover:bg-gray-800">Projects</a>
+                    <a href="#awards" class="px-3 py-2 rounded-lg text-sm transition-colors hover:bg-gray-800">Awards</a>
+                    <a href="#speaking" class="px-3 py-2 rounded-lg text-sm transition-colors hover:bg-gray-800">Speaking</a>
+                    <a href="#experience" class="px-3 py-2 rounded-lg text-sm transition-colors hover:bg-gray-800">Experience</a>
+                    <a href="#skills" class="px-3 py-2 rounded-lg text-sm transition-colors hover:bg-gray-800">Skills</a>
+                    <a href="#arts" class="px-3 py-2 rounded-lg text-sm transition-colors hover:bg-gray-800">Arts & Sports</a>
+                    <a href="#contact" class="px-3 py-2 rounded-lg text-sm transition-colors hover:bg-gray-800">Contact</a>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <!-- Dark mode toggle - without JS, omitted or static -->
+                    <!-- Mobile menu toggle using checkbox hack -->
+                    <input type="checkbox" id="mobile-menu" class="hidden peer">
+                    <label for="mobile-menu" class="md:hidden p-2 rounded-lg hover:bg-gray-800 cursor-pointer">
+                        ≡ <!-- Menu icon -->
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="hidden peer-checked:block md:hidden bg-gray-800 border-t border-gray-700">
+            <div class="px-4 py-2 space-y-1">
+                <a href="#home" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-gray-700">Home</a>
+                <a href="#about" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-gray-700">About</a>
+                <a href="#research" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-gray-700">Research</a>
+                <a href="#publications" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-gray-700">Publications</a>
+                <a href="#projects" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-gray-700">Projects</a>
+                <a href="#awards" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-gray-700">Awards</a>
+                <a href="#speaking" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-gray-700">Speaking</a>
+                <a href="#experience" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-gray-700">Experience</a>
+                <a href="#skills" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-gray-700">Skills</a>
+                <a href="#arts" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-gray-700">Arts & Sports</a>
+                <a href="#contact" class="block w-full text-left px-3 py-2 rounded-lg hover:bg-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute w-96 h-96 bg-blue-500/20 rounded-full blur-3xl -top-48 -left-48 animate-pulse"></div>
+            <div class="absolute w-96 h-96 bg-green-400/20 rounded-full blur-3xl -bottom-48 -right-48 animate-pulse"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-blue-500 to-green-400 p-1">
+                <div class="w-full h-full rounded-full bg-gray-900 flex items-center justify-center text-6xl">
+                     <img src="Pictures/profile.jpeg" alt="Profile Picture" class="profile-pic">
+                </div>
+            </div>
+            
+       
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">
+                Thevindu Dilmith
+                <span class="block bg-gradient-to-r from-blue-500 to-green-400 bg-clip-text text-transparent">
+                    Samarasekera
+                </span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl mb-8 text-gray-400">
+                AI Researcher • Electrical and Electronic Engineer • Public Speaker
+            </p>
+            
+            <p class="text-lg mb-12 max-w-2xl mx-auto text-gray-500">
+                Research Assistant at MARC | First Class Honours Graduate from University of Peradeniya | Pioneering AI solutions for biomedical wearables and computational agriculture
+            </p>
+            
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a href="#research" class="px-8 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg font-semibold transition-colors flex items-center gap-2">
+                    📖 <!-- BookOpen -->
+                    View Research
+                </a>
+                
+                <a href="https://drive.google.com/uc?export=download&id=18YDv9n8-pZuGwjovDRVqVVpUdoTMTsNc" download="CV_ThevinduSamarasekera.pdf" class="inline-block">
+                    <button class="px-8 py-3 border-2 border-blue-500 hover:bg-blue-500/10 rounded-lg font-semibold transition-colors flex items-center gap-2">
+                    ↓ <!-- Download -->
+                    Download CV
+                    </button>
+                </a>
+            </div>
+            
+            <div class="mt-12 animate-bounce">
+                ↓ <!-- ChevronDown -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">About Me</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        I am a passionate engineer and researcher specializing in Artificial Intelligence for real world dynamical systems such as biomedical systems and computational agriculture.
+                    </p>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        With a First Class Honours degree in Electrical and Electronic Engineering from the University of Peradeniya (GPA: 3.80/4.0), I have developed expertise in machine learning, embedded systems, and signal processing. My research has been recognized through multiple publications and awards at national and international levels.
+                    </p>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        I hold a Diploma in International Relations from Bandaranaike Centre for International Studies (Merit) and have completed the Operational level of Chartered Institute of Management Accountants.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Beyond technical pursuits, I am an accomplished public speaker with a TEDx talk and multiple national speaking championships. I believe in the power of communication to bridge the gap between complex technology and societal impact.
+                    </p>
+                   
+                </div>
+                
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+                        <div class="text-4xl font-bold text-blue-500 mb-2">3</div>
+                        <div class="text-sm text-gray-500">Research Publications</div>
+                    </div>
+                    <div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+                        <div class="text-4xl font-bold text-green-400 mb-2">20+</div>
+                        <div class="text-sm text-gray-500">Awards & Honors</div>
+                    </div>
+                    
+                    <div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+                        <div class="text-4xl font-bold text-orange-500 mb-2">10+</div>
+                        <div class="text-sm text-gray-500">Speaking Achievements</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-4 text-center">Research</h2>
+            <p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto">
+                My research focuses on applying artificial intelligence and computational methods to solve real-world problems in healthcare, agriculture, and beyond.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-8 rounded-xl bg-gray-800 border-2 border-gray-700 hover:border-blue-500 transition-all duration-300 hover:shadow-xl cursor-pointer">
+                    <div class="text-sm text-blue-500 font-semibold mb-2">Biomedical Engineering</div>
+                    <h3 class="text-2xl font-bold mb-4">AI for Biomedical Wearables</h3>
+                    <p class="text-gray-500 mb-4">Developing intelligent wearable systems using machine learning for real-time health monitoring and diagnostics.</p>
+                    <div class="mb-4">
+                        <div class="text-sm font-semibold mb-1">Methods:</div>
+                        <div class="text-sm text-gray-500">Deep Learning, Signal Processing, Embedded Systems</div>
+                    </div>
+                    <div class="text-sm">
+                        <span class="font-semibold">Supervisors:</span> <span class="text-gray-500">Prof. Roshan Godaliyadda, Prof. Parakrama Ekanayake, Dr. Asela Ratnayake</span>
+                    </div>
+                </div>
+                <div class="p-8 rounded-xl bg-gray-800 border-2 border-gray-700 hover:border-blue-500 transition-all duration-300 hover:shadow-xl cursor-pointer">
+                    <div class="text-sm text-blue-500 font-semibold mb-2">Agriculture Technology</div>
+                    <h3 class="text-2xl font-bold mb-4">Computational Agritech</h3>
+                    <p class="text-gray-500 mb-4">Implementing computational models for precision agriculture and crop optimization.</p>
+                    <div class="mb-4">
+                        <div class="text-sm font-semibold mb-1">Methods:</div>
+                        <div class="text-sm text-gray-500">Computer Vision, IoT, Data Analytics</div>
+                    </div>
+                    <div class="text-sm">
+                        <span class="font-semibold">Supervisors:</span> <span class="text-gray-500">Prof. Janaka Ekanayake, Prof. Roshan Godaliyadda, Prof. Parakrama Ekanayake, Prof. Vijitha Herath, Prof. Lasantha Weerasinghe</span>
+                    </div>
+                </div>
+                <div class="p-8 rounded-xl bg-gray-800 border-2 border-gray-700 hover:border-blue-500 transition-all duration-300 hover:shadow-xl cursor-pointer">
+                    <div class="text-sm text-blue-500 font-semibold mb-2">Control Systems</div>
+                    <h3 class="text-2xl font-bold mb-4">Non-Linear Plant Dynamics Modeling</h3>
+                    <p class="text-gray-500 mb-4">Using Neural ODEs to model complex plant growth patterns and environmental responses.</p>
+                    <div class="mb-4">
+                        <div class="text-sm font-semibold mb-1">Methods:</div>
+                        <div class="text-sm text-gray-500">Neural ODEs, Differential Equations, Machine Learning</div>
+                    </div>
+                    <div class="text-sm">
+                        <span class="font-semibold">Supervisors:</span> <span class="text-gray-500">Prof. Janaka Ekanayake, Prof. Roshan Godaliyadda, Prof. Parakrama Ekanayake, Prof. Vijitha Herath, Prof. Lasantha Weerasinghe</span>
+                    </div>
+                </div>
+                <div class="p-8 rounded-xl bg-gray-800 border-2 border-gray-700 hover:border-blue-500 transition-all duration-300 hover:shadow-xl cursor-pointer">
+                    <div class="text-sm text-blue-500 font-semibold mb-2">Computer Vision</div>
+                    <h3 class="text-2xl font-bold mb-4">Motion Capture Systems</h3>
+                    <p class="text-gray-500 mb-4">IMU-based motion capture for human activity recognition and biomechanics analysis.</p>
+                    <div class="mb-4">
+                        <div class="text-sm font-semibold mb-1">Methods:</div>
+                        <div class="text-sm text-gray-500">Sensor Fusion, Kalman Filtering, 3D Reconstruction</div>
+                    </div>
+                    <div class="text-sm">
+                        <span class="font-semibold">Supervisors:</span> <span class="text-gray-500">Prof. Roshan Godaliyadda, Prof. Parakrama Ekanayake, Dr. Chanaka Senanayake, Dr. Pramila Gamage, Prof. Vijitha Herath</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="py-20 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">Publications & Poster Presentations</h2>
+            
+            <div class="space-y-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                        <span class="w-2 h-8 bg-yellow-500 rounded"></span>
+                        International Conferences (Under Review)
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="p-6 rounded-lg bg-gray-900 border border-gray-700">
+                            <h4 class="text-lg font-semibold mb-2">Vision-Based Phenotyping and Neural ODE Modeling of Tea Plant Dynamics</h4>
+                            <p class="text-sm text-gray-500 mb-2">J.M.T.R.B Navarathne, Buwaneka Epakanda, Thevindu Samarasekera, Janaka Ekanayake, Roshan Godaliyadda, Mervyn Parakrama Bandara Ekanayake</p>
+                            <p class="text-sm text-blue-500">Computer Vision and Pattern Recognition Conference (CVPR) 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                        <span class="w-2 h-8 bg-green-400 rounded"></span>
+                        International Conferences (Accepted)
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="p-6 rounded-lg bg-gray-900 border border-gray-700">
+                            <h4 class="text-lg font-semibold mb-2">Computer Vision-Based Remote Monitoring System for Phenotyping and Analysis of Tea</h4>
+                            <p class="text-sm text-gray-500 mb-2">Buwaneka Epakanda, Tharinda Navarathne, Thevindu Samarasekera, Janaka Ekanayake, Roshan Godaliyadda, Parakrama Ekanayake</p>
+                            <p class="text-sm text-green-400">19th International Conference on Industrial and Information Systems</p>
+                        </div>
+                        <div class="p-6 rounded-lg bg-gray-900 border border-gray-700">
+                            <h4 class="text-lg font-semibold mb-2">Remote sensing and computer vision for tea Agrovoltaic optimization</h4>
+                            <p class="text-sm text-gray-500 mb-2">B. A. B. Epakanda, J. M. T. R. B. Navarathne, T. D. Samarasekera, J. B. Ekanayake, V. R. Herath, G. M. R. I. Godaliyadda, and M. P. B. Ekanayake</p>
+                            <p class="text-sm text-green-400">International Conference on Climate Change and Agriculture in Tropical Latitudes, May 2025, Colombo, Sri Lanka</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                        <span class="w-2 h-8 bg-blue-500 rounded"></span>
+                        Poster Presentations
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="p-6 rounded-lg bg-gray-900 border border-gray-700">
+                            <h4 class="text-lg font-semibold mb-2">AgroVision - Light Regulation of an Agrovoltaic Plant</h4>
+                            <p class="text-sm text-gray-500 mb-2">Presented a Remote Monitoring, Dynamic Growth Modeling and Light Control Strategies for Tea Agrovoltaics.</p>
+                            <p class="text-sm text-blue-500">iPURSE 2025, Dept. of Animal Science, Faculty of Agriculture, University of Peradeniya, Sri Lanka. August 28-29, 2025.</p>
+                        </div>
+                        <div class="p-6 rounded-lg bg-gray-900 border border-gray-700">
+                            <h4 class="text-lg font-semibold mb-2">Wearable Device and AI based Analysis for Human Motion Capture</h4>
+                            <p class="text-sm text-gray-500 mb-2">Presented a non-intrusive wireless wearable device utilizing IMU sensors to monitor human activity through AI-based algorithms.</p>
+                            <p class="text-sm text-blue-500">iPURSE 2025, Dept. of Animal Science, Faculty of Agriculture, University of Peradeniya, Sri Lanka. August 28-29, 2025.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-4 text-center">Projects</h2>
+            <p class="text-center text-gray-500 mb-12">A selection of my technical projects and innovations (Reverse Chronological Order)</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group p-6 rounded-xl bg-gray-800 hover:bg-gray-700 border-2 border-gray-700 hover:border-blue-500 transition-all duration-300 cursor-pointer hover:shadow-2xl hover:-translate-y-1">
+                    <div class="text-6xl mb-4">🌱</div>
+                    <div class="text-xs text-blue-500 font-semibold mb-2">Agritech</div>
+                    <h3 class="text-xl font-bold mb-3">Understanding the Relationships between Environmental Parameters and Plant Parameters in Tea (Ongoing)</h3>
+                    <p class="text-sm text-gray-500 mb-4">Using graph theory and unsupervised clustering algorithms to cluster and identify patterns between the variation of environmental parameters and plant parameters which affect the growth of tea.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 text-xs rounded bg-gray-700">Graph Theory</span>
+                        <span class="px-2 py-1 text-xs rounded bg-gray-700">Clustering</span>
+                    </div>
+                    <div class="text-sm">
+                        <span class="font-semibold">Supervisors:</span> <span class="text-gray-500">Prof. Janaka Ekanayake, Prof. Roshan Godaliyadda, Prof. Parakrama Ekanayake, Prof. Vijitha Herath, Prof. Lasantha Weerasinghe</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-blue-500 text-sm font-semibold group-hover:gap-3 transition-all">
+                        Learn More 🔗
+                    </div>
+                </div>
+                <div class="group p-6 rounded-xl bg-gray-800 hover:bg-gray-700 border-2 border-gray-700 hover:border-blue-500 transition-all duration-300 cursor-pointer hover:shadow-2xl hover:-translate-y-1">
+                    <div class="text-6xl mb-4">🏋️</div>
+                    <div class="text-xs text-blue-500 font-semibold mb-2">Biomedical</div>
+                    <h3 class="text-xl font-bold mb-3">Analysing and Benchmarking Weightlifting and other Sports/Outdoor Activities using a Wearable Device (Ongoing)</h3>
+                    <p class="text-sm text-gray-500 mb-4">Collecting IMU data using a wearable device, collecting video data and other personal data of Commonwealth, National, and Amateur weightlifters. Utilizing a human motion model, signal processing and clustering algorithms for pattern Recognition. Defining a performance space and performance Benchmarking.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 text-xs rounded bg-gray-700">IMU</span>
+                        <span class="px-2 py-1 text-xs rounded bg-gray-700">Signal Processing</span>
+                        <span class="px-2 py-1 text-xs rounded bg-gray-700">Clustering</span>
+                    </div>
+                    <div class="text-sm">
+                        <span class="font-semibold">Supervisors:</span> <span class="text-gray-500">Prof. Roshan Godaliyadda, Prof. Parakrama Ekanayake, Dr. Asela Ratnayake</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-blue-500 text-sm font-semibold group-hover:gap-3 transition-all">
+                        Learn More 🔗
+                    </div>
+                </div>
+                <div class="group p-6 rounded-xl bg-gray-800 hover:bg-gray-700 border-2 border-gray-700 hover:border-blue-500 transition-all duration-300 cursor-pointer hover:shadow-2xl hover:-translate-y-1">
+                    <div class="text-6xl mb-4">🌿</div>
+                    <div class="text-xs text-blue-500 font-semibold mb-2">Agritech</div>
+                    <h3 class="text-xl font-bold mb-3">Modeling and Interpretation of Non-linear Growth Dynamics of Tea Plants</h3>
+                    <p class="text-sm text-gray-500 mb-4">Using phenotypic information from tea plants to model the non-linear growth dynamics utilizing Neural ODEs. Interpreting the modeled growth dynamics using mathematical equations for tea growth derived from phenotypic data.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 text-xs rounded bg-gray-700">Neural ODEs</span>
+                        <span class="px-2 py-1 text-xs rounded bg-gray-700">Phenotyping</span>
+                    </div>
+                    <div class="text-sm">
+                        <span class="font-semibold">Supervisors:</span> <span class="text-gray-500">Prof. Janaka Ekanayake, Prof. Roshan Godaliyadda, Prof. Parakrama Ekanayake, Prof. Vijitha Herath, Prof. Lasantha Weerasinghe</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-blue-500 text-sm font-semibold group-hover:gap-3 transition-all">
+                        Learn More 🔗
+                    </div>
+                </div>
+                <div class="group p-6 rounded-xl bg-gray-800 hover:bg-gray-700 border-2 border-gray-700 hover:border-blue-500 transition-all duration-300 cursor-pointer hover:shadow-2xl hover:-translate-y-1">
+                    <div class="text-6xl mb-4">☀️</div>
+                    <div class="text-xs text-blue-500 font-semibold mb-2">Agritech</div>
+                    <h3 class="text-xl font-bold mb-3">Light Sensing and Control of an Agrovoltaic Plant</h3>
+                    <p class="text-sm text-gray-500 mb-4">Designed and implemented a semi-wireless comprehensive remote monitoring system for an agrovoltaic plant. Performed tea phenotyping through image processing and segmentation. Designed optimum light control strategies to have a more predictable tea yield.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 text-xs rounded bg-gray-700">Image Processing</span>
+                        <span class="px-2 py-1 text-xs rounded bg-gray-700">IoT</span>
+                    </div>
+                    <div class="text-sm">
+                        <span class="font-semibold">Supervisors:</span> <span class="text-gray-500">Prof. Janaka Ekanayake, Prof. Roshan Godaliyadda, Prof. Parakrama Ekanayake, Prof. Vijitha Herath</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-blue-500 text-sm font-semibold group-hover:gap-3 transition-all">
+                        Learn More 🔗
+                    </div>
+                </div>
+                <div class="group p-6 rounded-xl bg-gray-800 hover:bg-gray-700 border-2 border-gray-700 hover:border-blue-500 transition-all duration-300 cursor-pointer hover:shadow-2xl hover:-translate-y-1">
+                    <div class="text-6xl mb-4">🎯</div>
+                    <div class="text-xs text-blue-500 font-semibold mb-2">Biomedical</div>
+                    <h3 class="text-xl font-bold mb-3">Human Motion Capture through a Wearable Device</h3>
+                    <p class="text-sm text-gray-500 mb-4">Designed and developed a wireless ergonomic, low cost wearable device for human motion capture using IMU sensors. Developed sensor fusion algorithms (PCA, EKF) for accurate estimation of dynamic joint-angle variations.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 text-xs rounded bg-gray-700">IMU</span>
+                        <span class="px-2 py-1 text-xs rounded bg-gray-700">PCA</span>
+                        <span class="px-2 py-1 text-xs rounded bg-gray-700">EKF</span>
+                    </div>
+                    <div class="text-sm">
+                        <span class="font-semibold">Supervisors:</span> <span class="text-gray-500">Prof. Roshan Godaliyadda, Prof. Parakrama Ekanayake, Dr. Chanaka Senanayake, Dr. Pramila Gamage, Prof. Vijitha Herath</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-blue-500 text-sm font-semibold group-hover:gap-3 transition-all">
+                        Learn More 🔗
+                    </div>
+                </div>
+                <div class="group p-6 rounded-xl bg-gray-800 hover:bg-gray-700 border-2 border-gray-700 hover:border-blue-500 transition-all duration-300 cursor-pointer hover:shadow-2xl hover:-translate-y-1">
+                    <div class="text-6xl mb-4">🚗</div>
+                    <div class="text-xs text-blue-500 font-semibold mb-2">Automotive</div>
+                    <h3 class="text-xl font-bold mb-3">Keyless and Buttonless Passive Entry Passive Start (PEPS) System</h3>
+                    <p class="text-sm text-gray-500 mb-4">Designed a Passive Entry Passive Start system for the new car at Vega Innovations (Pvt) Ltd. Used Bluetooth Low Energy (BLE) technology for implementation.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 text-xs rounded bg-gray-700">BLE</span>
+                        <span class="px-2 py-1 text-xs rounded bg-gray-700">Embedded Systems</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-blue-500 text-sm font-semibold group-hover:gap-3 transition-all">
+                        Learn More 🔗
+                    </div>
+                </div>
+                <div class="group p-6 rounded-xl bg-gray-800 hover:bg-gray-700 border-2 border-gray-700 hover:border-blue-500 transition-all duration-300 cursor-pointer hover:shadow-2xl hover:-translate-y-1">
+                    <div class="text-6xl mb-4">❤️</div>
+                    <div class="text-xs text-blue-500 font-semibold mb-2">Biomedical</div>
+                    <h3 class="text-xl font-bold mb-3">IR-based Pulse Monitoring Device (UG)</h3>
+                    <p class="text-sm text-gray-500 mb-4">Designed and developed Wearable pulse-wave and heart-rate acquisition device using IR sensors as part of the EE251 course project.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 text-xs rounded bg-gray-700">IR Sensors</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-blue-500 text-sm font-semibold group-hover:gap-3 transition-all">
+                        Learn More 🔗
+                    </div>
+                </div>
+                <div class="group p-6 rounded-xl bg-gray-800 hover:bg-gray-700 border-2 border-gray-700 hover:border-blue-500 transition-all duration-300 cursor-pointer hover:shadow-2xl hover:-translate-y-1">
+                    <div class="text-6xl mb-4">📹</div>
+                    <div class="text-xs text-blue-500 font-semibold mb-2">Embedded Systems</div>
+                    <h3 class="text-xl font-bold mb-3">Modularized Surveillance Camera (UG)</h3>
+                    <p class="text-sm text-gray-500 mb-4">Designed and developed a modularized surveillance camera using ESP32-CAM module as part of the EE356 course project.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 text-xs rounded bg-gray-700">ESP32</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-blue-500 text-sm font-semibold group-hover:gap-3 transition-all">
+                        Learn More 🔗
+                    </div>
+                </div>
+                <div class="group p-6 rounded-xl bg-gray-800 hover:bg-gray-700 border-2 border-gray-700 hover:border-blue-500 transition-all duration-300 cursor-pointer hover:shadow-2xl hover:-translate-y-1">
+                    <div class="text-6xl mb-4">📷</div>
+                    <div class="text-xs text-blue-500 font-semibold mb-2">Embedded Systems</div>
+                    <h3 class="text-xl font-bold mb-3">Camera which tracks objects with Embedded Systems (ATmega328P) (UG)</h3>
+                    <p class="text-sm text-gray-500 mb-4">Designed and developed a camera which tracks objects (moves with objects) using Embedded Systems (ATmega328P) as part of the EE322 course project.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="px-2 py-1 text-xs rounded bg-gray-700">ATmega328P</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-blue-500 text-sm font-semibold group-hover:gap-3 transition-all">
+                        Learn More 🔗
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="py-20 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-4 text-center">Awards & Achievements</h2>
+            <p class="text-center text-gray-500 mb-12">Recognition for innovation, research, and academic excellence</p>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-xl bg-gray-900 border-2 border-gray-700 hover:border-yellow-500 transition-all duration-300 cursor-pointer hover:shadow-xl hover:-translate-y-1">
+                    <div class="text-5xl mb-4">🏆</div>
+                    <div class="text-xs text-yellow-500 font-semibold mb-2">National Research</div>
+                    <h3 class="text-lg font-bold mb-2">National Winner — Best Innovative Project in HealthTech</h3>
+                    <p class="text-sm text-gray-500 mb-2">SLASSCOM National Ingenuity Awards 2025. Won amidst competition from Universities and Corporates all over Sri Lanka</p>
+                    <div class="text-sm font-semibold text-blue-500">2025</div>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border-2 border-gray-700 hover:border-yellow-500 transition-all duration-300 cursor-pointer hover:shadow-xl hover:-translate-y-1">
+                    <div class="text-5xl mb-4">🏆</div>
+                    <div class="text-xs text-yellow-500 font-semibold mb-2">National Research</div>
+                    <h3 class="text-lg font-bold mb-2">Central Province Winner — Best Innovative Project in HealthTech</h3>
+                    <p class="text-sm text-gray-500 mb-2">SLASSCOM National Ingenuity Awards 2025. Won amidst competition from Universities and Corporates all over Sri Lanka</p>
+                    <div class="text-sm font-semibold text-blue-500">2025</div>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border-2 border-gray-700 hover:border-yellow-500 transition-all duration-300 cursor-pointer hover:shadow-xl hover:-translate-y-1">
+                    <div class="text-5xl mb-4">🏆</div>
+                    <div class="text-xs text-yellow-500 font-semibold mb-2">National Research</div>
+                    <h3 class="text-lg font-bold mb-2">Central Province Winner — Best Innovative Undergraduate Project</h3>
+                    <p class="text-sm text-gray-500 mb-2">SLASSCOM National Ingenuity Awards 2025</p>
+                    <div class="text-sm font-semibold text-blue-500">2025</div>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border-2 border-gray-700 hover:border-yellow-500 transition-all duration-300 cursor-pointer hover:shadow-xl hover:-translate-y-1">
+                    <div class="text-5xl mb-4">🎓</div>
+                    <div class="text-xs text-yellow-500 font-semibold mb-2">University</div>
+                    <h3 class="text-lg font-bold mb-2">Prof. E.F. Bartholomeusz Award</h3>
+                    <p class="text-sm text-gray-500 mb-2">For the Best Project on Engineering Mathematics in University of Peradeniya</p>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border-2 border-gray-700 hover:border-yellow-500 transition-all duration-300 cursor-pointer hover:shadow-xl hover:-translate-y-1">
+                    <div class="text-5xl mb-4">🥈</div>
+                    <div class="text-xs text-yellow-500 font-semibold mb-2">National Competition</div>
+                    <h3 class="text-lg font-bold mb-2">1st Runner Up — Brainstorm 2023</h3>
+                    <p class="text-sm text-gray-500 mb-2">National Competition on Biomedical Engineering Projects organized by IEEE Student Branch of University of Moratuwa. Project: motion capture device based on hall effect sensors</p>
+                    <div class="text-sm font-semibold text-blue-500">2023</div>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border-2 border-gray-700 hover:border-yellow-500 transition-all duration-300 cursor-pointer hover:shadow-xl hover:-translate-y-1">
+                    <div class="text-5xl mb-4">🥈</div>
+                    <div class="text-xs text-yellow-500 font-semibold mb-2">National Competition</div>
+                    <h3 class="text-lg font-bold mb-2">1st Runner Up — ACES Hackathon 2023</h3>
+                    <p class="text-sm text-gray-500 mb-2">Product Design Competition organized by Association of Computer Engineering Students, University of Peradeniya. Project: motion capture device based on hall effect sensors</p>
+                    <div class="text-sm font-semibold text-blue-500">2023</div>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border-2 border-gray-700 hover:border-yellow-500 transition-all duration-300 cursor-pointer hover:shadow-xl hover:-translate-y-1">
+                    <div class="text-5xl mb-4">🏅</div>
+                    <div class="text-xs text-yellow-500 font-semibold mb-2">Scholarships/Academic</div>
+                    <h3 class="text-lg font-bold mb-2">Global DNA - Gold award by MT Studio</h3>
+                    <div class="text-sm font-semibold text-blue-500">2019</div>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border-2 border-gray-700 hover:border-yellow-500 transition-all duration-300 cursor-pointer hover:shadow-xl hover:-translate-y-1">
+                    <div class="text-5xl mb-4">🏅</div>
+                    <div class="text-xs text-yellow-500 font-semibold mb-2">Academic</div>
+                    <h3 class="text-lg font-bold mb-2">Award for Best grades in Combined Mathematics</h3>
+                    <p class="text-sm text-gray-500 mb-2">For achieving the highest marks for Combined Mathematics at S. Thomas’ College Mt. Lavinia</p>
+                    <div class="text-sm font-semibold text-blue-500">2019</div>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border-2 border-gray-700 hover:border-yellow-500 transition-all duration-300 cursor-pointer hover:shadow-xl hover:-translate-y-1">
+                    <div class="text-5xl mb-4">🏅</div>
+                    <div class="text-xs text-yellow-500 font-semibold mb-2">Academic</div>
+                    <h3 class="text-lg font-bold mb-2">Award for the Best student in class</h3>
+                    <p class="text-sm text-gray-500 mb-2">For achieving the highest grades in class at S. Thomas’ College Mt. Lavinia</p>
+                    <div class="text-sm font-semibold text-blue-500">2019, 2018, 2017</div>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border-2 border-gray-700 hover:border-yellow-500 transition-all duration-300 cursor-pointer hover:shadow-xl hover:-translate-y-1">
+                    <div class="text-5xl mb-4">🎨</div>
+                    <div class="text-xs text-yellow-500 font-semibold mb-2">Art</div>
+                    <h3 class="text-lg font-bold mb-2">David Paynter Memorial Prize for Art</h3>
+                    <div class="text-sm font-semibold text-blue-500">2016</div>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border-2 border-gray-700 hover:border-yellow-500 transition-all duration-300 cursor-pointer hover:shadow-xl hover:-translate-y-1">
+                    <div class="text-5xl mb-4">🎨</div>
+                    <div class="text-xs text-yellow-500 font-semibold mb-2">Art</div>
+                    <h3 class="text-lg font-bold mb-2">Prize for Art</h3>
+                    <p class="text-sm text-gray-500 mb-2">For receiving the highest marks for Art at S. Thomas’ College Mt. Lavinia</p>
+                    <div class="text-sm font-semibold text-blue-500">2016, 2010</div>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border-2 border-gray-700 hover:border-yellow-500 transition-all duration-300 cursor-pointer hover:shadow-xl hover:-translate-y-1">
+                    <div class="text-5xl mb-4">📜</div>
+                    <div class="text-xs text-yellow-500 font-semibold mb-2">Scholarship</div>
+                    <h3 class="text-lg font-bold mb-2">Wisdom Business Academy Scholarship</h3>
+                    <p class="text-sm text-gray-500 mb-2">Awarded by the Wisdom Business Academy</p>
+                    <div class="text-sm font-semibold text-blue-500">2016</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speaking Section -->
+    <section id="speaking" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-4 text-center">Speaking & Leadership</h2>
+            <p class="text-center text-gray-500 mb-12">Sharing knowledge and inspiring others through public speaking and leadership</p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-8 rounded-xl bg-gradient-to-br from-red-900/30 to-gray-800 border-2 border-red-800">
+                    <div class="text-4xl mb-4">🎤</div>
+                    <h3 class="text-2xl font-bold mb-3">TEDx Speaker</h3>
+                    <p class="text-gray-500 mb-4">
+                        Delivered at TEDxYouth@GatewayCollegeNegombo in 2019, this talk uses personal childhood stories to advocate for experiential learning, emphasizing that true understanding comes from hands-on trials ("dip it") rather than just being told ("pour it")
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=lCBzoIfnmbw" class="text-red-500 font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                        Watch 🔗
+                    </a>
+                </div>
+
+                <div class="p-8 rounded-xl bg-gradient-to-br from-blue-900/30 to-gray-800 border-2 border-blue-800">
+                    <div class="text-4xl mb-4">🏆</div>
+                    <h3 class="text-2xl font-bold mb-3">National Speaking Championships</h3>
+                    <p class="text-gray-500 mb-4">
+                        Overall Champion — National Public Speaking Competition “Avra Kadabra” (2018)<br>
+                        Champion — Prepared Speech category “Avra Kadabra” (2018)<br>
+                        Champion — “Speak Up” National competition (2017)<br>
+                        1st Runner Up — Speech Evaluation category “Enliven” (2019)<br>
+                        2nd Runner Up - Evaluation Speech Contest of Division I District 82 Toastmasters International (2025)<br>
+                        1st Runner Up - Evaluation Speech Contest of Area I3 District 82 Toastmasters International (2025)<br>
+                        1st Runner Up - Evaluation Speech Contest of Central Link Toastmasters Club in District 82 Toastmasters International (2025)
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-700">Champion x3</span>
+                        <span class="px-3 py-1 rounded-full text-sm bg-gray-700">1st Runner Up x3</span>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-xl bg-gradient-to-br from-green-900/30 to-gray-800 border-2 border-green-800">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-2xl font-bold mb-3">Toastmasters & Workshops</h3>
+                    <p class="text-gray-500 mb-4">
+                        Active member — Central Link Toastmasters Club<br>
+                        Conducted many Youth Public Speaking and Leadership Workshops around Sri Lanka<br>
+                        Master of Ceremonies in many events such as UNICEF session at Sri Lanka Model United Nations conference in 2017.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-xl bg-gradient-to-br from-purple-900/30 to-gray-800 border-2 border-purple-800">
+                    <div class="text-4xl mb-4">👨‍🏫</div>
+                    <h3 class="text-2xl font-bold mb-3">Organizing Major Events</h3>
+                    <p class="text-gray-500 mb-4">
+                        Youngest Executive Committee Member — Sri Lanka Model UN (2017). Chaired the International Press Corps (IPC)<br>
+                        Executive Committee — Gavel Conference Sri Lanka (2017). Involved with finance, logistics and overall event planning and management.<br>
+                        Head of Finance — Gavel Conference Sri Lanka (2018). Headed the Finance team for a large 3 day residential conference. Planned and managed all finances.
+                    </p>
+                </div>
+                <div class="p-8 rounded-xl bg-gradient-to-br from-orange-900/30 to-gray-800 border-2 border-orange-800">
+                    <div class="text-4xl mb-4">🤝</div>
+                    <h3 class="text-2xl font-bold mb-3">Initiated Societies and Volunteer Organizations</h3>
+                    <p class="text-gray-500 mb-4">
+                        Gavel Clubs of Sri Lanka (2017). Charter member of this umbrella body for all Gavel Clubs of Sri Lanka<br>
+                        Gavel Club of S. Thomas’ College (2019). Charter Vice President Education and later the President. Initiated many events, systems and made it one of the most outstanding gavel clubs in Sri Lanka.
+                    </p>
+                    <p class="text-gray-500 mb-4">
+                        My work has been recorded in the book titled ”100 Years at Mount” alongside oratory greats of Sri Lanka including S.W.R.D.Bandaranaike and Dananjaya Hettiarachchi.
+                    </p>
+                </div>
+                <div class="p-8 rounded-xl bg-gradient-to-br from-indigo-900/30 to-gray-800 border-2 border-indigo-800">
+                    <div class="text-4xl mb-4">❤️</div>
+                    <h3 class="text-2xl font-bold mb-3">Volunteering</h3>
+                    <p class="text-gray-500 mb-4">
+                        Senior House Prefect — Stone House of S. Thomas’ College, Mt. Lavinia<br>
+                        Vice President — Innovation Club of S. Thomas’ College, Mt. Lavinia<br>
+                        Director (Finance & Partnerships) — Rotaract Club of University of Peradeniya<br>
+                        Team Leader (Business Development) — AIESEC in University of Peradeniya<br>
+                        Committee Member — Mathematics Society of University of Peradeniya<br>
+                        Committee Member — Vibhawa Literary Association of University of Peradeniya
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-20 bg-gray-800/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">Work and Teaching Experience</h2>
+            
+            <div class="space-y-8">
+                <div class="relative pl-8 border-l-2 border-blue-500">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-blue-500 rounded-full"></div>
+                    <div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+                        <div class="text-sm text-blue-500 font-semibold mb-1">Sept 2025 - Present</div>
+                        <h3 class="text-xl font-bold mb-1">Research Assistant</h3>
+                        <div class="text-sm text-gray-500 mb-3">Multidisciplinary AI Research Center - MARC</div>
+                        <p class="text-gray-400 mb-4">Working as a Research Assistant focusing on AI applications in Biomedical Wearables and Agritech.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-2 text-sm">
+                                <span class="text-green-400 mt-1">✓</span>
+                                <span class="text-gray-500">AI for Bio-Med Wearables Research Group: Non-invasive IMU Based wireless Wearable device to track human motion utilizing signal processing and machine learning algorithms.</span>
+                            </li>
+                            <li class="flex items-start gap-2 text-sm">
+                                <span class="text-green-400 mt-1">✓</span>
+                                <span class="text-gray-500">AI for Agritech Research Group: Modelling plant growth dynamics, Identifying patterns between plant parameters and environmental parameters</span>
+                            </li>
+                            <li class="flex items-start gap-2 text-sm">
+                                <span class="text-green-400 mt-1">✓</span>
+                                <span class="text-gray-500">Involved in interdisciplinary collaborations with the Kandy General Hospital, Manufacturing Engineering Department, Physiotherapy Department, Crop Science Department, Botany Department, and Tea Research Institute.</span>
+                            </li>
+                        </ul>
+                        <div class="text-sm mt-4">
+                            <span class="font-semibold">Main Supervisors:</span> <span class="text-gray-500">Prof. J.B. Ekanayake, Prof. G.M.R.I. Godaliyadda, Prof. M.P.B. Ekanayake</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative pl-8 border-l-2 border-blue-500">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-blue-500 rounded-full"></div>
+                    <div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+                        <div class="text-sm text-blue-500 font-semibold mb-1">2024 — 12 weeks</div>
+                        <h3 class="text-xl font-bold mb-1">Engineering Intern</h3>
+                        <div class="text-sm text-gray-500 mb-3">South Asia Gateway Terminal Ltd.</div>
+                        <p class="text-gray-400 mb-4">Successfully completed my internship under supervisor Eng. Janith Chamikara which was mainly based on understanding the major engineering projects and infrastructure at SAGT Terminal in the Colombo Port, and projects based on PLCs</p>
+                    </div>
+                </div>
+                <div class="relative pl-8 border-l-2 border-blue-500">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-blue-500 rounded-full"></div>
+                    <div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+                        <div class="text-sm text-blue-500 font-semibold mb-1">2023 — 12 weeks</div>
+                        <h3 class="text-xl font-bold mb-1">Electronic Engineering Intern</h3>
+                        <div class="text-sm text-gray-500 mb-3">Vega Innovations (Pvt) Ltd</div>
+                        <p class="text-gray-400 mb-4">Successfully completed my internship under supervisor Eng. Rusira Dharmarathne. My work was regarding end to end product development with PCB designing, working with STM32 and Texas Instruments microcontrollers</p>
+                    </div>
+                </div>
+                <div class="relative pl-8 border-l-2 border-blue-500">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-blue-500 rounded-full"></div>
+                    <div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+                        <div class="text-sm text-blue-500 font-semibold mb-1">2020 — 16 weeks</div>
+                        <h3 class="text-xl font-bold mb-1">Finance Intern</h3>
+                        <div class="text-sm text-gray-500 mb-3">H-Connect (Pvt) Ltd.</div>
+                        <p class="text-gray-400 mb-4">Successfully completed my internship as a management accountant on Accounts Receivables for a few of Hirdaramani group’s apparel companies</p>
+                    </div>
+                </div>
+                <div class="relative pl-8 border-l-2 border-blue-500">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-blue-500 rounded-full"></div>
+                    <div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+                        <div class="text-sm text-blue-500 font-semibold mb-1">2019 — 16 weeks</div>
+                        <h3 class="text-xl font-bold mb-1">Teaching Assistant</h3>
+                        <div class="text-sm text-gray-500 mb-3">S. Thomas’ College, Mt. Lavinia</div>
+                        <p class="text-gray-400 mb-4">Served as a teaching assistant for English Medium GCE A/L (University entry exam) students studying Combined Mathematics, Physics and Chemistry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">Skills & Expertise</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        </> <!-- Code -->
+                        Technical Skills
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Python</span>
+                                <span class="text-gray-500">95%</span>
+                            </div>
+                            <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-blue-500 to-green-400" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Machine Learning</span>
+                                <span class="text-gray-500">90%</span>
+                            </div>
+                            <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-blue-500 to-green-400" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Embedded Systems</span>
+                                <span class="text-gray-500">80%</span>
+                            </div>
+                            <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-blue-500 to-green-400" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Signal Processing</span>
+                                <span class="text-gray-500">85%</span>
+                            </div>
+                            <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-blue-500 to-green-400" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">React/Node.js</span>
+                                <span class="text-gray-500">80%</span>
+                            </div>
+                            <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-blue-500 to-green-400" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">MATLAB</span>
+                                <span class="text-gray-500">80%</span>
+                            </div>
+                            <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-blue-500 to-green-400" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">IoT Systems</span>
+                                <span class="text-gray-500">70%</span>
+                            </div>
+                            <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-blue-500 to-green-400" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        
+                    
+                    
+                    
+                    
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        
+                        Professional Skills
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Research Methodology</span>
+                                <span class="text-gray-500">90%</span>
+                            </div>
+                            <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-green-400 to-blue-500" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Public Speaking</span>
+                                <span class="text-gray-500">95%</span>
+                            </div>
+                            <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-green-400 to-blue-500" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Technical Writing</span>
+                                <span class="text-gray-500">90%</span>
+                            </div>
+                            <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-green-400 to-blue-500" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Project Management</span>
+                                <span class="text-gray-500">85%</span>
+                            </div>
+                            <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-green-400 to-blue-500" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Team Leadership</span>
+                                <span class="text-gray-500">90%</span>
+                            </div>
+                            <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-green-400 to-blue-500" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Communication</span>
+                                <span class="text-gray-500">95%</span>
+                            </div>
+                            <div class="h-2 bg-gray-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-green-400 to-blue-500" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arts & Sports Section -->
+    <section id="arts" class="py-20 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-4 text-center">Arts, Drama, Creative Work & Sports Achievements</h2>
+            <p class="text-center text-gray-500 mb-12">A multidimensional approach to life beyond technology</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-xl bg-gray-900 border-2 border-gray-700 text-center">
+                    <div class="text-6xl mb-4">🎨</div>
+                    <h3 class="text-xl font-bold mb-3">Visual Arts</h3>
+                    <p class="text-gray-500 mb-4">Winner — “David Paynter” Memorial Prize (2016)<br>Won multiple national-level art competitions</p>
+                    <div class="text-sm text-blue-500 font-semibold">Multiple Awards</div>
+                </div>
+
+                <div class="p-8 rounded-xl bg-gray-900 border-2 border-gray-700 text-center">
+                    <div class="text-6xl mb-4">🎭</div>
+                    <h3 class="text-xl font-bold mb-3">Theatre & Drama</h3>
+                    <p class="text-gray-500 mb-4">Acted in and directed Sinhala and English theatre productions</p>
+                    <div class="text-sm text-blue-500 font-semibold">Multiple Productions</div>
+                </div>
+
+                <div class="p-8 rounded-xl bg-gray-900 border-2 border-gray-700 text-center">
+                    <div class="text-6xl mb-4">🏆</div>
+                    <h3 class="text-xl font-bold mb-3">Sports</h3>
+                    <p class="text-gray-500 mb-4">Member of Senior Sports Teams at S. Thomas’ College: Badminton, Swimming, Diving, Water Polo, Cricket, Soccer (Junior)<br>Completed Mount Lavinia 2-mile Sea Swim (2017)<br>University of Peradeniya Men’s Swimming Team member<br>1st Runner Up — Inter University Games (2022)<br>2nd Runner Up — Sri Lanka University Games (2023)<br>Overall 1st Runner Up — Sri Lanka University Games Swimming (2023)</p>
+                    <div class="text-sm text-blue-500 font-semibold">Multiple Achievements</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Programs Section -->
+    <section id="training" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-4 text-center">Training Programs and Special Initiatives</h2>
+            <p class="text-center text-gray-500 mb-12">Additional professional development</p>
+            
+            <div class="space-y-8">
+                <div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-2">Project Lead — #AboutTime Gender Equality Campaign (2018)</h3>
+                    <p class="text-gray-500">Started and lead a gender equality campaign in Sri Lanka titled #AboutTime focusing on street harassment, domestic violence and cat calling</p>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-2">Participant — Coffee with CEO (MT Studio, 14 weeks, 2019)</h3>
+                    <p class="text-gray-500">An exploratory learning program with top CEOs of Sri Lanka.</p>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-2">Completed Leadership Training Program conducted by High Five Consultancy (10 weeks, 2018)</h3>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-2">Participated in the “Success in Communication and Presentation” program conducted by Mr. Dananjaya Hettiarachchi the 2014 World Champion of Public Speaking in 2017. (2 weeks)</h3>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+                    <h3 class="text-xl font-bold mb-2">Participated in the “Success in Leadership and Communication” program conducted by Toastmasters International in 2016. (10 weeks)</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Referees Section -->
+    <section id="referees" class="py-20 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">Referees</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+                    <h3 class="text-lg font-bold mb-2">Prof. J. B. Ekanayake</h3>
+                    <p class="text-gray-500">Chair Professor, Department of Electrical and Electronics Engineering, University of Peradeniya<br>Mobile: +94 77 714 6979</p>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+                    <h3 class="text-lg font-bold mb-2">Prof. G.M.R.I.Godaliyadda</h3>
+                    <p class="text-gray-500">Professor, Department of Electrical and Electronics Engineering, University of Peradeniya<br>Mobile: +94 77 770 9035</p>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+                    <h3 class="text-lg font-bold mb-2">Prof. M.P.B. Ekanayake</h3>
+                    <p class="text-gray-500">Professor, Department of Electrical and Electronics Engineering, University of Peradeniya<br>Mobile: +94 77 364 8882</p>
+                </div>
+                <div class="p-6 rounded-xl bg-gray-900 border border-gray-700">
+                    <h3 class="text-lg font-bold mb-2">Prof. J. S. Malik Peiris</h3>
+                    <p class="text-gray-500">School of Public Health, University of Hong Kong<br>Mobile: +852 9389 3736</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4">Let's Connect</h2>
+            <p class="text-xl text-gray-500 mb-12">
+                I'm always open to discussing research collaborations, speaking opportunities, or interesting projects
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-6 mb-12">
+                <a href="mailto:thevindusamarasekera@gmail.com" class="flex items-center gap-3 px-8 py-4 rounded-xl bg-gray-800 hover:bg-gray-700 transition-colors">
+                    ✉️ <!-- Mail -->
+                    <div class="text-left">
+                        <div class="text-xs text-gray-500">Email</div>
+                        <div class="font-semibold">thevindusamarasekera@gmail.com</div>
+                    </div>
+                </a>
+
+                <a href="tel:+94773871372" class="flex items-center gap-3 px-8 py-4 rounded-xl bg-gray-800 hover:bg-gray-700 transition-colors">
+                    📞 <!-- Phone -->
+                    <div class="text-left">
+                        <div class="text-xs text-gray-500">Phone</div>
+                        <div class="font-semibold">+94 77 387 1372</div>
+                    </div>
+                </a>
+
+                <a href="#" class="flex items-center gap-3 px-8 py-4 rounded-xl bg-gray-800 hover:bg-gray-700 transition-colors">
+                    LinkedIn <!-- Linkedin -->
+                    <div class="text-left">
+                        <div class="text-xs text-gray-500">LinkedIn</div>
+                        <div class="font-semibold">Connect</div>
+                    </div>
+                </a>
+
+                <a href="#" class="flex items-center gap-3 px-8 py-4 rounded-xl bg-gray-800 hover:bg-gray-700 transition-colors">
+                    GitHub <!-- Github -->
+                    <div class="text-left">
+                        <div class="text-xs text-gray-500">GitHub</div>
+                        <div class="font-semibold">Follow</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="p-8 rounded-xl bg-gray-800 inline-block">
+                <div class="text-4xl mb-3">📍</div>
+                <div class="text-lg font-semibold mb-1">Colombo, Sri Lanka</div>
+                <div class="text-gray-500">Available for remote collaborations worldwide</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-gray-800 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500">
+            <p>© 2025 Thevindu Samarasekera. All rights reserved.</p>
+    
+        </div>
+    </footer>
+
+    <!-- Note: Modals omitted as they require JS; dark mode fixed to dark; icons replaced with emoji/text -->
+</body>
+</html>
